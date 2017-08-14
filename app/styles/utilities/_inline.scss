@@ -1,0 +1,16 @@
+.inline {
+  display: inline-block;
+  &--2 {
+    width: 49%;
+  }
+}
+.inline-container {
+    > * {
+      display: inline-block;
+    }
+    &--2 {
+      > * {
+        width: 49%;
+      }
+    }
+}

@@ -1,0 +1,11 @@
+.underline {
+  text-align: center;
+  &::after {
+    content: '';
+    width: pxtopercentage(80, 1438);
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: getH(25) auto 0;
+  }
+}

@@ -1,0 +1,96 @@
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 60px;
+  padding-right: 60px;
+  @media (max-width: 1400px) {
+    max-width: 1180px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  & > .col {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &--reversed {
+    & > .col {
+      float: right;
+      &:first-child {
+        padding-right: 0;
+        padding-left: 40px;
+      }
+      &:last-child {
+        padding-left: 0;
+        padding-right: 40px;
+      }
+    }
+  }
+  &--no-padding {
+    & > .col {
+      padding: 0 !important;
+    }
+  }
+  &.equal-height {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    &::before, &::after {
+      content: none;
+    }
+    & > .col {
+      float: none;
+    }
+  }
+  &.vertically-center {
+    align-items: center;
+  }
+  &--2 {
+    & > .col {
+      width: 50%;
+    }
+  }
+  &--3 {
+    & > .col {
+      width: 33.3%;
+    }
+    & > .col--two-thirds {
+      width: 66%;
+    }
+  }
+  &--4 {
+    & > .col {
+      width: 25%;
+    }
+    & > .col--two-fourth {
+      width: 50%;
+    }
+  }
+  &--5 {
+    & > .col {
+      width: 20%;
+    }
+  }
+  & > .full { width: 100%; }
+  & > .two-thirds { width: 66.6%; }
+  & > .three-fourths { width: 75%; }
+  & > .two-fifths { width: 40%; }
+  & > .three-fifths { width: 60%; }
+  & > .four-fifths { width: 80%; }
+}
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}

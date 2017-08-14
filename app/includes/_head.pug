@@ -1,0 +1,18 @@
+head
+  meta(charset='utf-8')
+  title
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon', href='/favicon.ico')
+  meta(name='theme-color' content=$navy)
+  // build:css styles/vendor.css
+  // bower:css
+  link(rel='stylesheet', href='/bower_components/normalize-css/normalize.css')
+  // endbower
+  // endbuild
+  // build:css(.tmp) styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  // endbuild
+  // build:js scripts/vendor/modernizr.js
+  //- script(src='bower_components/modernizr/dist/modernizr-build.js')
+  // endbuild

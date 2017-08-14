@@ -1,0 +1,46 @@
+// bower:scss
+// endbower
+
+// Settings – used with preprocessors and contain font, colors definitions, etc.
+@import 'settings/fonts';
+@import 'settings/colors';
+
+// Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
+// Functions
+
+@import 'tools/function-percentage';
+
+// Mixins
+
+
+// Generic – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+@import 'generic/box-model';
+@import 'generic/body';
+@import 'generic/html';
+@import 'generic/page';
+
+// Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+@import 'elements/link';
+@import 'elements/image';
+
+
+// Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS
+@import 'objects/grid';
+
+
+// Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
+//@import 'components/accordion';
+
+
+// Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+@import 'utilities/screen-reader';
+@import 'utilities/lists';
+@import 'utilities/text-alignment';
+@import 'utilities/floats';
+@import 'utilities/inline';
+@import 'utilities/tabular-container';
+@import 'utilities/show';
+@import 'utilities/align';
+@import 'utilities/underline';
+@import 'utilities/full-height';
+@import 'utilities/text-weight';

@@ -1,0 +1,9 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}

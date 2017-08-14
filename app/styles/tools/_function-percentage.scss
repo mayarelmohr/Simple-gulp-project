@@ -1,0 +1,8 @@
+/// Returns size in percentage
+/// @param {Number} $px - size in pixels
+/// @param {Number} $parent - size of parent in pixels
+/// @return Percentage
+@function pxtopercentage($px, $parent) {
+  @return percentage($px/$parent);
+}
+
